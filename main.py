@@ -31,10 +31,10 @@ def main():
 
     '''output video'''
     fourcc_out = cv.VideoWriter_fourcc('D','I','V','X')
-    result_video = cv.VideoWriter('resultvideo.mp4', fourcc_out, 10, (width, height))
+    result_video = cv.VideoWriter('resultvideo.mp4', fourcc_out, 5, (width, height))
 
     frame_num = 0
-    while(frame_num < 50):
+    while(frame_num < 300):
         ret, frame2 = cap.read()
         next = cv.cvtColor(frame2, cv.COLOR_BGR2GRAY)
         start = time.time()
@@ -48,7 +48,7 @@ def main():
 
         cv.imshow('dense optical flow', frame2)
         result_video.write(frame2)
-        k = cv.waitKey(20) & 0xff
+        k = cv.waitKey(100) & 0xff
         if k == 27:
             break
         #elif k == ord('s'):
