@@ -1,6 +1,6 @@
 import cv2 as cv
 import numpy as np
-from drawgridpoint import Draw_gridpoint, Draw_vector
+from drawgridpoint import Draw_gridpoint, Draw_vector, Draw_moving_object
 import time
 
 # TO DO
@@ -9,6 +9,7 @@ import time
 
 def main():
     video_index = 1
+    # set up frame for optical flow
     if video_index == 0:
         cap = cv.VideoCapture(0)
         ret, frame1 = cap.read()
@@ -18,8 +19,11 @@ def main():
         filestring = 'testvideo2.mp4'
         cap = cv.VideoCapture(filestring)
         ret, frame1 = cap.read()
-        print(ret)
         prvs = cv.cvtColor(frame1, cv.COLOR_BGR2GRAY)
+
+    # set up the reference for object detection
+    reference_frame = np.ones_like(frame1)
+    reference_frame.fill(255)
 
     print(frame1.shape) # height, width, colorspace layer
     width = frame1.shape[1]
@@ -27,7 +31,7 @@ def main():
 
     '''predefine the mask image'''
     denseImage = np.zeros_like(frame1)
-    denseImage.fill(255)
+    denseImage.fill(255) # empty image
 
     '''output video'''
     fourcc_out = cv.VideoWriter_fourcc('D','I','V','X')
@@ -35,6 +39,7 @@ def main():
 
     frame_num = 0
     while(frame_num < 300):
+        reference_frame.fill(255)
         ret, frame2 = cap.read()
         next = cv.cvtColor(frame2, cv.COLOR_BGR2GRAY)
         start = time.time()
@@ -44,9 +49,15 @@ def main():
         mag, ang = cv.cartToPolar(flow[..., 0], flow[..., 1])
         cv.normalize(mag, mag, 0, 20, cv.NORM_MINMAX)
 
-        Draw_vector(frame2, mag, ang, 20)
+        point_distance = 10
+        # draw the optical flow vector
+        Draw_vector(frame2, mag, ang, point_distance)
 
-        cv.imshow('dense optical flow', frame2)
+        #transfer the colorspace of the reference image
+        Draw_moving_object(reference_frame, mag, point_distance, 1)
+        reference_frame = cv.cvtColor(reference_frame, cv.COLOR_RGB2BGR)
+        horiyatal_images = np.concatenate((frame2, reference_frame), axis=1)
+        cv.imshow('dense optical flow',horiyatal_images)
         result_video.write(frame2)
         k = cv.waitKey(100) & 0xff
         if k == 27:
