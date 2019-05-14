@@ -3,6 +3,9 @@ import numpy as np
 import threading
 from imutils.object_detection import non_max_suppression
 
+# globacl variable
+car_cascade = cv.CascadeClassifier('trainedcar_small/data/cascade.xml')
+
 def Draw_gridpoint(frame, mag, divide, size, pointdistance):
     output = np.copy(frame)
     shape = frame.shape
@@ -20,14 +23,19 @@ def Draw_vector(src, mag, ang, divide):
     height_list = np.arange(0, shape[0], divide)
     width_list = np.arange(0, shape[1], divide)
 
-    '''human detection'''
+    '''human detection and optical flow filter'''
+    filter_matrix = np.ones_like(mag)
+
     # car cascade for car detections
     src_gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
-    face_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
-    faces = face_cascade.detectMultiScale(src_gray, 1.1, 1)
-    # draw the original bounding boxes
-    for (x, y, w, h) in faces:
-        cv.rectangle(src, (x, y), (x + w, y + h), (0, 0, 255), 2)
+    src_gray = cv.GaussianBlur(src_gray, (13, 13), 0)
+    cars = car_cascade.detectMultiScale(src_gray, 1.2, 3, minSize=(60, 60))
+
+    for (x, y, w, h) in cars:
+        if not y > shape[0] / 2 and x < shape[1] / 3 or not y > shape[0] / 2 and x > shape[1] * 2 / 3:
+            cv.rectangle(src, (x, y), (x + w, y + h), (0, 0, 255), 2)
+            filter_matrix[y: y+h, x: x+w].fill(0)
+    mag = mag*filter_matrix
 
     reference_matrix = np.ones_like(ang)
     face_region_matrix = np.ones_like(ang)
@@ -88,7 +96,6 @@ def Draw_vector(src, mag, ang, divide):
             status2 = 'Left'
 
     return status1, status2
-
 
 # draw point thread function
 def draw_point(img, start_height, end_height, start_width, end_width):

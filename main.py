@@ -10,7 +10,7 @@ import time
 # 4. Time check
 
 def main():
-    video_index = 0
+    video_index = 1
     # set up frame for optical flow
     if video_index == 0:
         cap = cv.VideoCapture(0)
@@ -37,10 +37,8 @@ def main():
 
     '''output video'''
     fourcc_out = cv.VideoWriter_fourcc('m', 'p', '4', 'v')
-    result_video = cv.VideoWriter('resultvideo.mp4', fourcc_out, 5, (width, height))
+    result_video = cv.VideoWriter('resultvideo2.mp4', fourcc_out, 5, (width, height))
 
-    # car cascade for car detections
-    car_cascade = cv.CascadeClassifier('cascade.xml')
 
     # define number of the frame
     frame_num = 0
@@ -58,24 +56,18 @@ def main():
             cv.normalize(mag, mag, 0, 20, cv.NORM_MINMAX)
             point_distance = 10
 
-            # car detection
-            next_detection = next.copy()
-            next_detection = cv.GaussianBlur(next_detection, (5, 5), 0)
-            cars = car_cascade.detectMultiScale(next, 1.3, 4)
-            for (x, y, w, h) in cars:
-                cv.rectangle(frame2, (x, y), (x + w, y + h), (0, 0, 255), 2)
-
             # draw the optical flow vector
             Draw_vector(frame2, mag, ang, point_distance)
 
             # transfer the color-space of the reference image
-            Draw_moving_object(reference_frame, mag, ang, point_distance, 0)
+            # Draw_moving_object(reference_frame, mag, ang, point_distance, 0)
 
             end = time.time()
             # print('Optical Flow Farneback time: ' + str(end - start))
 
             # filter the output image
             start_diliat = time.time()
+            '''
             kernal_size = 2
             element = cv.getStructuringElement(cv.MORPH_ELLIPSE, (kernal_size * 2 + 1, kernal_size * 2 + 1),
                                                (kernal_size, kernal_size))
@@ -85,7 +77,9 @@ def main():
             # transfer and combine image
             reference_frame = cv.cvtColor(reference_frame, cv.COLOR_RGB2BGR)
             horiyatal_images = np.concatenate((frame2, reference_frame), axis=1)
-            cv.imshow('dense optical flow', horiyatal_images)
+            '''
+
+            cv.imshow('dense optical flow', frame2)
 
             # record for the video
             result_video.write(frame2)
@@ -116,7 +110,7 @@ def main():
 
             cv.imshow('dense optical flow', frame2)
             result_video.write(frame2)
-            k = cv.waitKey(20) & 0xff
+            k = cv.waitKey(0) & 0xff
             if k == 27:
                 break
             elif k == ord('s'):
