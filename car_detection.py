@@ -4,7 +4,7 @@ import cv2 as cv
 videoinput = 1
 
 if videoinput == 1:
-    cap = cv.VideoCapture('testvideo2.mp4')
+    cap = cv.VideoCapture('src_video/testvideo.mp4')
 else:
     cap = cv.VideoCapture(0)
 
@@ -22,9 +22,9 @@ while frame_count < 300:
     ret, frames = cap.read()
 
     gray = cv.cvtColor(frames, cv.COLOR_BGR2GRAY)
-    gray = cv.GaussianBlur(gray, (13, 13), 0, 0)
+    gray = cv.GaussianBlur(gray, (15, 15), 0, 0)
     #  gray = cv.medianBlur(gray, 5)
-    cars = car_cascade.detectMultiScale(gray, 1.2, 3, minSize=(60, 60))
+    cars = car_cascade.detectMultiScale(gray, 1.2, 5, minSize=(60, 60))
     height, width, channels = frames.shape
     print(height, width)
 

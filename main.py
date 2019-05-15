@@ -1,6 +1,6 @@
 import cv2 as cv
 import numpy as np
-from drawgridpoint import Draw_gridpoint, Draw_vector, Draw_moving_object
+from drawgridpoint import  Draw_vector, Direction_detect
 import time
 
 # TO DO
@@ -18,7 +18,7 @@ def main():
         prvs = cv.cvtColor(frame1, cv.COLOR_BGR2GRAY)
 
     if video_index == 1:
-        filestring = 'testvideo2.mp4'
+        filestring = 'src_video/testvideo2.mp4'
         cap = cv.VideoCapture(filestring)
         ret, frame1 = cap.read()
         prvs = cv.cvtColor(frame1, cv.COLOR_BGR2GRAY)
@@ -37,7 +37,7 @@ def main():
 
     '''output video'''
     fourcc_out = cv.VideoWriter_fourcc('m', 'p', '4', 'v')
-    result_video = cv.VideoWriter('resultvideo2.mp4', fourcc_out, 5, (width, height))
+    result_video = cv.VideoWriter('result_video/resultvideo2.mp4', fourcc_out, 5, (width, height))
 
 
     # define number of the frame
@@ -57,37 +57,16 @@ def main():
             point_distance = 10
 
             # draw the optical flow vector
-            Draw_vector(frame2, mag, ang, point_distance)
-
-            # transfer the color-space of the reference image
-            # Draw_moving_object(reference_frame, mag, ang, point_distance, 0)
-
-            end = time.time()
-            # print('Optical Flow Farneback time: ' + str(end - start))
-
-            # filter the output image
-            start_diliat = time.time()
-            '''
-            kernal_size = 2
-            element = cv.getStructuringElement(cv.MORPH_ELLIPSE, (kernal_size * 2 + 1, kernal_size * 2 + 1),
-                                               (kernal_size, kernal_size))
-            reference_frame = cv.dilate(reference_frame, element)
-            # print('dilate run time: ' + str(time.time() - start_diliat))
-
-            # transfer and combine image
-            reference_frame = cv.cvtColor(reference_frame, cv.COLOR_RGB2BGR)
-            horiyatal_images = np.concatenate((frame2, reference_frame), axis=1)
-            '''
-
+            camera_status = Draw_vector(frame2, mag, ang, point_distance)
+            cv.putText(frame2, camera_status, (30, 30), 5, 1, (0, 0, 255), 1, cv.LINE_8)
             cv.imshow('dense optical flow', frame2)
-
             # record for the video
             result_video.write(frame2)
             k = cv.waitKey(10) & 0xff
             if k == 27:
                 break
             elif k == ord('s'):
-                cv.imwrite('opticalfb.png', frame2)
+                cv.imwrite('result_image/opticalfb.png', frame2)
 
         # camear video test functions
         elif video_index == 0:
@@ -100,7 +79,7 @@ def main():
             point_distance = 10
 
             # draw the optical flow vector
-            frontback, leftright = Draw_vector(frame2, mag, ang, point_distance)
+            frontback, leftright = Direction_detect(frame2, mag, ang, point_distance)
             if len(frontback):
                 cv.putText(frame2, frontback, (30, 30), 3, 1, (0, 0, 255), 1, cv.LINE_8)
             if len(leftright):
@@ -110,11 +89,11 @@ def main():
 
             cv.imshow('dense optical flow', frame2)
             result_video.write(frame2)
-            k = cv.waitKey(0) & 0xff
+            k = cv.waitKey(5) & 0xff
             if k == 27:
                 break
             elif k == ord('s'):
-                cv.imwrite('opticalfb.png', frame2)
+                cv.imwrite('result_image/optical.png', frame2)
 
         prvs = np.copy(next)
         frame_num = frame_num + 1
