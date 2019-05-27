@@ -29,9 +29,9 @@ reference_matrix[501:, 501:] = reference_matrix[501:, 501:] + 2 * np.pi
 reference_matrix[501:, :500] = reference_matrix[501:, :500] + np.pi
 reference_matrix[:500, :500] = reference_matrix[:500, :500] + 2 * np.pi
 
-
 # front back status data smoothing
 sum_frontback_list = []
+
 
 def Direction_detect(src, mag, ang, divide):
     shape = mag.shape
@@ -93,12 +93,29 @@ def Direction_detect(src, mag, ang, divide):
     return status1, status2
 
 
+def Optical_flow_result(src, mag, ang, divide):
+    shape = mag.shape
+    height_list = np.arange(0, shape[0], divide)
+    width_list = np.arange(0, shape[1], divide)
+
+    for heightindex in height_list:
+        for widthindex in width_list:
+            mag_temp = mag[heightindex][widthindex]
+            if mag_temp > 5:
+                length = mag_temp
+                arg = ang[heightindex][widthindex]
+                deltaX = int(length * np.cos(arg))
+                deltaY = int(length * np.sin(arg))
+                cv.arrowedLine(src, (widthindex, heightindex), (widthindex + deltaX, heightindex + deltaY), (0, 255, 0),
+                   1, 8, 0, 0.2)
+
+
 def Draw_vector(src, mag, ang, divide):
     shape = mag.shape
     height_list = np.arange(0, shape[0], divide)
     width_list = np.arange(0, shape[1], divide)
 
-    '''human detection and optical flow filter'''
+    '''moving objects detection and optical flow filter'''
     filter_matrix = np.ones_like(mag)
 
     # car cascade for car detections

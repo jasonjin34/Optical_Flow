@@ -1,6 +1,7 @@
 import cv2 as cv
 import numpy as np
-from drawgridpoint import  Draw_vector, Direction_detect
+from drawgridpoint import Draw_vector, Direction_detect, Optical_flow_result
+from pose_estimation import Pose_estimation
 import time
 
 # TO DO
@@ -8,9 +9,12 @@ import time
 # 2. Test dense optical flow algorithm farneback optical flow !!check
 # 3. output image listcmpare
 # 4. Time check
+# 5. Noise detection, car detection for our input sampple
+# 6. Set up the reference matrix
+# 7. Test rotated video
 
 def main():
-    video_index = 1
+    video_index = 2
     # set up frame for optical flow
     if video_index == 0:
         cap = cv.VideoCapture(0)
@@ -22,6 +26,13 @@ def main():
         cap = cv.VideoCapture(filestring)
         ret, frame1 = cap.read()
         prvs = cv.cvtColor(frame1, cv.COLOR_BGR2GRAY)
+
+    if video_index == 2:
+        filestring = 'rotatedvideo/rotatedVideo.mp4'
+        cap = cv.VideoCapture(filestring)
+        ret, frame1 = cap.read()
+        prvs = cv.cvtColor(frame1, cv.COLOR_BGR2GRAY)
+
 
     # set up the reference for object detection
     reference_frame = np.ones_like(frame1)
@@ -42,7 +53,7 @@ def main():
 
     # define number of the frame
     frame_num = 0
-    while frame_num < 300:
+    while frame_num < 200:
         start = time.time()
         reference_frame.fill(255)
         ret, frame2 = cap.read()
@@ -94,6 +105,20 @@ def main():
                 break
             elif k == ord('s'):
                 cv.imwrite('result_image/optical.png', frame2)
+
+        elif video_index == 2:
+            # init dense optical flow result
+            next = cv.cvtColor(frame2, cv.COLOR_BGR2GRAY)
+            flow = cv.calcOpticalFlowFarneback(prvs, next, None, 0.5, 3, 15, 3, 5, 1.2, 0)
+            mag, ang = cv.cartToPolar(flow[..., 0], flow[..., 1])
+            cv.normalize(mag, mag, 0, 20, cv.NORM_MINMAX)
+            point_distance = 10
+            Pose_estimation(frame2, mag, ang, point_distance)
+            cv.imshow('dense optical flow', frame2)
+            cv.imwrite('result_image_rotated/' + str(frame_num) + '.jpg', frame2)
+            k = cv.waitKey(5) & 0xff
+            if k == 27:
+                break
 
         prvs = np.copy(next)
         frame_num = frame_num + 1
