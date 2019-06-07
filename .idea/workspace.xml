@@ -53,10 +53,34 @@
       <change afterPath="$PROJECT_DIR$/../Imagepreprocess/pos/7.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Imagepreprocess/pos/8.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Imagepreprocess/pos/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drawgridpoint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_estimation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/segmentation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demostration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/new_frame.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/new_frame2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/new_frame3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/new_frame4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/new_frame5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/new_frame6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/new_frame7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/old_frame.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/old_frame2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/old_frame3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/old_frame4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/old_frame5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/old_frame6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/old_frame7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/result1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/result2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/result3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/result5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/result6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/result7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result_image/Moving_backward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result_image/Moving_forward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result_image/after.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result_image/after_Moment.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result_image/before_Moment.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result_image/opticalfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result_image/rotated.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA_version1/cubic_sphere.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BA_version1/cubic_sphere.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA_version1/image_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BA_version1/image_preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA_version1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BA_version1/main.py" afterDir="false" />
@@ -3870,9 +3894,200 @@
       <change beforePath="$PROJECT_DIR$/../bachelor_arbeit/projection_divideimage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bachelor_arbeit/projection_divideimage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bachelor_arbeit/pygl_cubic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bachelor_arbeit/pygl_cubic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawgridpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/drawgridpoint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/101.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/101.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/102.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/102.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/103.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/103.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/104.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/104.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/105.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/105.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/106.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/106.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/107.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/107.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/108.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/108.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/109.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/109.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/110.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/110.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/111.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/111.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/112.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/112.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/113.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/113.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/114.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/114.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/115.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/115.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/116.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/116.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/117.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/117.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/118.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/118.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/119.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/121.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/121.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/122.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/122.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/123.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/123.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/124.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/124.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/125.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/125.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/126.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/126.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/127.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/127.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/128.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/129.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/129.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/130.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/130.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/131.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/131.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/132.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/132.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/133.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/133.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/134.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/135.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/135.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/136.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/136.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/137.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/137.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/139.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/139.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/140.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/140.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/141.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/141.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/142.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/142.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/143.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/143.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/144.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/144.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/145.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/145.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/146.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/146.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/148.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/148.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/149.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/149.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/151.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/151.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/152.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/152.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/153.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/153.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/154.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/154.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/155.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/155.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/156.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/156.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/157.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/157.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/158.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/158.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/159.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/159.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/160.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/161.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/161.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/162.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/162.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/163.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/163.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/164.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/164.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/168.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/168.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/169.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/169.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/170.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/170.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/171.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/171.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/172.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/172.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/173.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/173.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/174.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/174.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/175.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/175.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/176.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/176.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/177.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/177.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/178.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/178.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/179.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/179.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/180.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/180.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/181.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/181.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/182.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/182.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/183.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/183.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/184.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/184.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/185.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/185.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/186.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/186.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/187.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/187.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/188.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/188.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/189.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/189.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/190.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/190.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/191.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/191.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/192.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/192.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/193.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/193.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/194.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/194.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/195.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/195.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/196.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/196.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/197.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/197.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/198.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/198.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/199.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/199.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/87.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/87.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/89.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/89.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/90.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/91.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/91.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/92.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/92.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/93.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/93.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/94.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/94.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/95.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/95.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/96.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/96.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/97.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/97.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/98.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/98.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_image_rotated/99.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result_image_rotated/99.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result_video/resultvideo2.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/result_video/resultvideo2.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../repo" beforeDir="false" afterPath="$PROJECT_DIR$/../repo" afterDir="false" />
     </list>
@@ -3884,13 +4099,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+            <state relative-caret-position="622">
+              <caret line="237" selection-start-line="237" selection-end-line="237" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pose_estimation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/segmentation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frames/new_frame.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demostration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3899,8 +4155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drawgridpoint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+            <state relative-caret-position="-1218">
+              <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -3908,31 +4164,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pose_estimation.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car_detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result_image_rotated/18.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result_image_rotated/20.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result_image_rotated/32.jpg">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -3949,10 +4187,11 @@
       <find>rectangle</find>
       <find>zero</find>
       <find>2</find>
-      <find>mag</find>
-      <find>print</find>
       <find>pr</find>
       <find>car_cascade</find>
+      <find>print</find>
+      <find>wher</find>
+      <find>mag</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -3966,14 +4205,15 @@
         <option value="$PROJECT_DIR$/segmentation.py" />
         <option value="$PROJECT_DIR$/car_detection.py" />
         <option value="$PROJECT_DIR$/drawgridpoint.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/pose_estimation.py" />
+        <option value="$PROJECT_DIR$/demostration.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1418" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -3982,7 +4222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3990,10 +4229,16 @@
               <item name="opticalflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="opticalflow" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="opticalflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opticalflow" type="462c0819:PsiDirectoryNode" />
+              <item name="frames" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4028,6 +4273,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/car_detection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demostration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="opticalflow" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demostration.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -4122,6 +4388,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.demostration" />
         <item itemvalue="Python.pose_estimation" />
         <item itemvalue="Python.car_detection" />
         <item itemvalue="Python.fetchImage" />
@@ -4152,22 +4419,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1418" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32826087" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553419" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47811815" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1214442" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18851571" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.18418202" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.27461708" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3369803" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -4192,17 +4460,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/drawgridpoint.py</url>
-          <line>211</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/opticalhsv.png" />
     <entry file="file://$PROJECT_DIR$/Training-HaarCascade/fetchImage.py" />
@@ -4223,23 +4480,6 @@
     <entry file="file://$PROJECT_DIR$/result_image_rotated/23.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -4259,39 +4499,120 @@
     <entry file="file://$PROJECT_DIR$/result_image_rotated/14.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drawgridpoint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result_image_rotated/18.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/result_image_rotated/20.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/33.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/35.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/38.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/26.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/30.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/result_image_rotated/32.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/37.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/40.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/49.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/66.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/53.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/52.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/57.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/62.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/63.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/61.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/58.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_image_rotated/59.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frames/new_frame.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pose_estimation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
+        <state relative-caret-position="32">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawgridpoint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1218">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demostration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
